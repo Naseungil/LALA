@@ -46,6 +46,11 @@ body{
   align-items: center;
   gap:80px;
 }
+.menu_btn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 .main_menu .main_list{
   display: flex;
   gap:80px;
@@ -63,11 +68,14 @@ body{
   outline: none;
   border: 1px solid #000;
 }
-#search + i{
+#search + button{
   position: absolute;
-  right:5%;
+  right:0;
   top: 50%;
   transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 #search:focus{
   box-shadow: inset 2px 2px 5px rgba(254,207,239,1),
