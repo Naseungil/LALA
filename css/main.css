@@ -1,9 +1,10 @@
 @charset 'utf-8';
-@import url(reset.css);
+
 
 :root{
   --mc:#FECFEF;
 }
+
 body{
   width: 1920px;
   margin: 0 auto;
@@ -17,6 +18,10 @@ body{
   justify-content: end;
   gap:15px;
   line-height: 30px;
+}
+.top_menu li a{
+  text-decoration: none;
+  color:#000;
 }
 .top_menu li:hover{
   text-decoration:underline;
@@ -48,7 +53,7 @@ body{
   align-items: center;
   gap:80px;
   border-bottom: 1px solid rgba(0,0,0,.1);
-  box-shadow: 0px 4px 4px -4px rgba(0,0,0,1);
+  box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
   box-sizing: border-box;
 }
 
@@ -60,6 +65,10 @@ body{
 .main_menu .main_list{
   display: flex;
   gap:80px;
+}
+.main_menu .main_list a{
+  text-decoration: none;
+  color:#000;
 }
 .main_menu .main_list li:hover{
   text-decoration:underline;
@@ -111,42 +120,53 @@ section .sub_tt{
   position: relative;
   margin-bottom: 80px;
 }
-section .sub_tt .prev{
-  position: absolute;
-  top: 0;
-  left: 40%;
+section .sub_tt h2 a{
+  color:#000;
 }
-section .sub_tt .next{
-  position: absolute;
-  top:0;
-  right: 40%;
+/* button */
+.slides_wrapper{
+  width: 1250px;
+  position: relative;
 }
-.sub_tt button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slides_wrapper button{
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
-  background: #fff;
-  border: none;
-  cursor:pointer;
+  border:none;
+  cursor: pointer;
 }
-.sub_tt button:hover{
-  background:var(--mc);
-  border-radius: 50%;
-  color: #fff;
+.slides_wrapper .next{
+  top:-10%;
+  right: 0;
 }
-.sub_tt button i{
-  font-size: 16px;
-  line-height: 30px;
+.slides_wrapper .prev{
+  top:-10%;
+  left: 0;
 }
+
+.slides_wrapper button:hover{
+  background: var(--mc);
+  color:#fff;
+}
+
+
+
+
 /* 상품 */
+.slides_wrapper{
+  margin-bottom: 80px;
+}
 .slides{
   display: flex;
   position: relative;
   gap:30px;
   left:0px;
-  margin-bottom: 80px;
+}
+.slides li a{
+  text-decoration: none;
+  color:#000;
 }
 .slides li img{
   width: 290px;;
@@ -164,6 +184,24 @@ section .sub_tt .next{
 .slides li div h4{
   text-align: end;
 }
+
+/* pager */
+.pager{
+  width: 1250px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.pager a{
+  text-decoration: none;
+}
+.pager a:hover{
+  text-decoration: underline;
+}
+
+/* pager_btn */
+
 
 /* footer */
 .footer_container{
@@ -183,6 +221,7 @@ section .sub_tt .next{
   text-align: start;
   margin-bottom: 10px;
   font-weight: 600;
+  color:#000;
 }
 address p a{
   text-decoration: underline;
