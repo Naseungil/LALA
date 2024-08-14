@@ -6,7 +6,8 @@
 }
 
 body{
-  width: 1920px;
+  max-width: 100vw;
+  height: 100vh;
   margin: 0 auto;
 }
 /* header */
@@ -101,8 +102,8 @@ body{
   cursor: pointer;
 }
 #search:focus{
-  box-shadow: inset 2px 2px 5px rgba(254,207,239,1),
-  inset -2px -2px 5px rgba(254,207,239,1) ;
+  box-shadow: inset 2px 2px 5px rgba(254,207,239,.5),
+  inset -2px -2px 5px rgba(254,207,239,.5) ;
   border: 1px solid #FECFEF;
 }
 
@@ -118,18 +119,20 @@ section .sub_tt{
   font-weight: 600;
   text-align: center;
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 section .sub_tt h2 a{
   color:#000;
 }
 /* button */
-.slides_wrapper{
-  width: 1250px;
-  position: relative;
+section .sub_btn{
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
-.slides_wrapper button{
-  position: absolute;
+section button{
   background: #fff;
   border-radius: 50%;
   width: 30px;
@@ -137,16 +140,8 @@ section .sub_tt h2 a{
   border:none;
   cursor: pointer;
 }
-.slides_wrapper .next{
-  top:-10%;
-  right: 0;
-}
-.slides_wrapper .prev{
-  top:-10%;
-  left: 0;
-}
 
-.slides_wrapper button:hover{
+section button:hover{
   background: var(--mc);
   color:#fff;
 }
@@ -156,6 +151,9 @@ section .sub_tt h2 a{
 
 /* 상품 */
 .slides_wrapper{
+  width: 1250px;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 80px;
 }
 .slides{
@@ -201,6 +199,10 @@ section .sub_tt h2 a{
 }
 
 /* pager_btn */
+.pager_btn{
+  position: absolute;
+  display: flex;
+}
 
 
 /* footer */
