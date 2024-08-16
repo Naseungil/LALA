@@ -17,8 +17,7 @@ body{
 header{
   background: url(/images/header_bg.jpg) no-repeat;
   background-size: cover;
-  height: 310px;
-  box-sizing: border-box;
+  height: 350px;
 }
 .top_menu{
   display: flex;
@@ -28,6 +27,7 @@ header{
   gap:15px;
   line-height: 30px;
   font-family: "Noto Sans KR", sans-serif;
+  padding-top: 20px;
 }
 .top_menu li a{
   text-decoration: none;
@@ -38,11 +38,11 @@ header{
 }
 .top_menu+h1{
   display: flex;
-  height: 250px;
+  padding:110px 0 110px;
+  line-height: 30px;
   justify-content: center;
   align-items: center;
   font-size: 36px;
-  line-height: 30px;
   font-weight: 900;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -64,6 +64,7 @@ header{
   border-bottom: 1px solid rgba(0,0,0,.1);
   box-shadow: 0px 100px 80px 0px rgba(0, 0, 0, 0.02), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
   box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .menu_btn{
@@ -71,11 +72,15 @@ header{
   border: none;
   cursor: pointer;
 }
+
 .main_menu .main_list{
   display: flex;
+  line-height: 30px;
   gap:80px;
   font-family: "Noto Sans KR", sans-serif;
 }
+
+
 .main_menu .main_list a{
   text-decoration: none;
   color:#000;
@@ -91,7 +96,7 @@ header{
   width: 185px;
   height: 25px;
   outline: none;
-  border: 1px solid #000;
+  border: 1px solid #ebebeb;
 }
 .searched label {
   position: absolute;
@@ -121,7 +126,6 @@ section{
   margin: 0 auto;
 }
 section .sub_tt{
-  text-decoration: underline;
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
@@ -130,8 +134,19 @@ section .sub_tt{
   margin-bottom: 30px;
   font-family: "Noto Sans KR", sans-serif;
 }
+section .sub_tt:after{
+  content:'';
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  top:calc(100% + 5px);
+  height: 2px;
+  background: #000;
+}
 section .sub_tt h2 a{
   color:#000;
+  text-decoration: none;
 }
 /* button */
 section .sub_btn{
@@ -249,6 +264,7 @@ footer{
 }
 .footer_container{
   width: 1250px;
+  height: 200px;
   margin: 0 auto;
   display:flex;
   justify-content: space-between;
@@ -256,16 +272,22 @@ footer{
 .footer_container div{
   display: flex;
   flex-direction: column;
-  gap:8px;
-  color:rgba(0, 0, 0,.5);
+  gap:8px; 
+  justify-content: start;
 }
 .footer_container div h3{
-  text-decoration: underline;
-  text-align: start;
+  color:rgba(0, 0, 0,.7);
   margin-bottom: 10px;
   font-weight: 600;
 }
-
-.footer_container div h3 p,span {
+.footer_container div p{
+  color:rgba(0, 0, 0,.5);
+}
+.footer_container div h3:hover{
   text-decoration: underline;
+  color:rgba(0, 0, 0,1);
+}
+.service p:hover{
+  text-decoration: underline;
+  color:rgba(0, 0, 0,1);
 }
