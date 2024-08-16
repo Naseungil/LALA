@@ -21,7 +21,7 @@ header{
 }
 .top_menu{
   display: flex;
-  width: 1250px;
+  width: 1500px;
   margin: 0 auto;
   justify-content: end;
   gap:15px;
@@ -49,13 +49,12 @@ header{
 
 /* main menu */
 .main_container{
-  width: 1250px;
+  width: 1500px;
   margin: 0 auto;
   margin-bottom: 110px;
   
 }
 .main_container .main_menu {
-  width: 1250px;
   height: 80px;
   display:flex;
   justify-content: space-between;
