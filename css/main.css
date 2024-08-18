@@ -219,12 +219,12 @@ section button:hover{
 .slides li div h3:hover {
   text-decoration:underline;
 }
-.slides li div h4:hover {
-  text-decoration:underline;
-}
 .slides li div h4{
   text-align: end;
   font-family: "Noto Sans KR", sans-serif;
+}
+.slides li div h4:hover {
+  text-decoration:underline;
 }
 
 /* pager */
