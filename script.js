@@ -1,2 +1,2 @@
+mySlide('.slides_wrapper');
 
-  
