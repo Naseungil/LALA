@@ -71,23 +71,38 @@ header{
   padding: 0 20px;
 } 
 
-.menu_btn{
-  background: transparent;
-  border: none;
-  cursor: pointer;
+.main_menu{
+  position: relative;
 }
-
 .main_menu .main_list{
   display: flex;
   line-height: 30px;
   gap:80px;
   font-family: "Noto Sans KR", sans-serif;
 }
+.menu_item{
+  position: absolute;
+  top:90%;
+  opacity: 0;
+  transition: 0.3s;
+  visibility: hidden;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
 
+.main_list li:hover .menu_item{
+  opacity: 1;
+  top:100%;
+  cursor: pointer;
+  visibility: visible;
+  background: var(--mc);
+  color: #fff;
+}
 
 .main_menu .main_list a{
   text-decoration: none;
   color:#000;
+  padding:0 0 30px;
 }
 .main_menu .main_list li:hover{
   text-decoration:underline;
@@ -158,6 +173,7 @@ section .sub_btn{
   justify-content: end;
   align-content: center;
   padding: 10px;
+  position: relative;
 }
 section button{
   background: #fff;
@@ -167,13 +183,10 @@ section button{
   border:none;
   cursor: pointer;
 }
-
 section button:hover{
   background: var(--mc);
   color:#fff;
 }
-
-
 
 
 /* 상품 */
@@ -187,8 +200,10 @@ section button:hover{
   display: flex;
   position: relative;
   gap:30px;
-  left:0px;
+  left:0;
+  transition: 0.5s;
 }
+
 .slides li a{
   text-decoration: none;
   color:#000;
