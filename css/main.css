@@ -176,7 +176,7 @@ section .sub_btn{
   position: relative;
 }
 section button{
-  background: #fff;
+  background: transparent;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -203,10 +203,31 @@ section button:hover{
   left:0;
   transition: 0.5s;
 }
-
+.slides li{
+  position: relative;
+}
 .slides li a{
   text-decoration: none;
   color:#000;
+}
+.slides li > a:after{
+  content: '구경가기';
+  position: absolute;
+  left:50%;
+  top:40%;
+  transform: translateX(-50%);
+  display: none;
+  padding: 3px 3px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.slides li > a:hover:after{
+  display: block;
+  background:transparent;
+  color:#fff;
+  border: 1px solid #fff;
+}
+.slides li > a:hover img{
+  opacity: 0.8;
 }
 .slides li img{
   width: 290px;;
@@ -221,9 +242,9 @@ section button:hover{
 }
 .slides li div h4{
   text-align: end;
-  font-family: "Noto Sans KR", sans-serif;
+
 }
-.slides li div h4:hover {
+.slides li div h4:hover{
   text-decoration:underline;
 }
 
@@ -290,6 +311,11 @@ footer{
   display:flex;
   justify-content: space-between;
 }
+.footer_container div address{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
 .footer_container div{
   display: flex;
   flex-direction: column;
@@ -303,6 +329,9 @@ footer{
 }
 .footer_container div p{
   color:rgba(0, 0, 0,.5);
+}
+.footer_container div p em{
+  font-weight: 700;
 }
 .footer_container div h3:hover{
   text-decoration: underline;
