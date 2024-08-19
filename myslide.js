@@ -13,6 +13,8 @@ function mySlide(target){
     const maxSlides = 4;
 
 
+
+
     const nextBtn = slideWrapper.querySelector('.next');
     const prevBtn = slideWrapper.querySelector('.prev');
     
@@ -50,7 +52,7 @@ function mySlide(target){
 
 //scroll
 const topBtn = document.querySelector('#go_top');
-const bottmoBtn = document.querySelector('#go_bottom')
+const bottmoBtn = document.querySelector('#go_bottom');
 
 topBtn.addEventListener('click',(e)=>{
   e.preventDefault();
