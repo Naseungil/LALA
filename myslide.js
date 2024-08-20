@@ -71,3 +71,31 @@ bottmoBtn.addEventListener('click',(e)=>{
   });
 })
 }
+
+
+
+window.onload = function() {
+  // 쿠키 체크
+  if (document.cookie.indexOf('popupClosed=true') === -1) {
+      document.getElementById('popup').style.display = 'block';
+  }
+
+  // '오늘 하루 안보기' 버튼 클릭 이벤트
+  document.getElementById('closePopup').onclick = function() {
+      setCookie('popupClosed', 'true', 1); // 1일 동안 쿠키 설정
+      document.getElementById('popup').style.display = 'none';
+  };
+
+  // '닫기' 버튼 클릭 이벤트
+  document.getElementById('closeNow').onclick = function() {
+      document.getElementById('popup').style.display = 'none';
+  };
+};
+
+// 쿠키 설정 함수
+function setCookie(name, value, days) {
+  var date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  var expires = "expires=" + date.toUTCString();
+  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
