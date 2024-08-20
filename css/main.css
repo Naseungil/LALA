@@ -205,6 +205,13 @@ section button:hover{
 }
 .slides li{
   position: relative;
+  transition: 0.3s;
+  top:0;
+}
+.slides li:hover{
+  top:-10px;
+  box-shadow:  0 8px 10px -4px rgba(0,0,0,.5);
+
 }
 .slides li a{
   text-decoration: none;
@@ -246,6 +253,10 @@ section button:hover{
 }
 .slides li div h4:hover{
   text-decoration:underline;
+}
+.slides li div{
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 /* pager */
