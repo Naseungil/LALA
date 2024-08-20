@@ -13,6 +13,36 @@ body{
   height: 100vh;
   margin: 0 auto;
 }
+/* popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  transform: translate(0, -50%);
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: var(--mc);
+  color: white;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #ff7d9e;
+}
+
 /* header */
 header{
   background: url(/images/header_bg.jpg) no-repeat;
