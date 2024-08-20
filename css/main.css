@@ -55,6 +55,13 @@ body{
 .popup_content button:hover {
   background-color: var(--mc2);
 }
+#maru{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left:50%;
+  top:50%;
+}
 
 
 /* header */
