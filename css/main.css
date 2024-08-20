@@ -4,6 +4,7 @@
 /* font-family: "Noto Sans KR", sans-serif; */
 :root{
   --mc:#FECFEF;
+  --mc2:#ff7d9e;
 }
 html{
   scroll-behavior: smooth; 
@@ -52,7 +53,7 @@ body{
 }
 
 .popup_content button:hover {
-  background-color: #ff7d9e;
+  background-color: var(--mc2);
 }
 
 
@@ -141,7 +142,7 @@ header{
   top:100%;
   cursor: pointer;
   visibility: visible;
-  background: var(--mc);
+  background: var(--mc2);
   color: #fff;
 }
 
