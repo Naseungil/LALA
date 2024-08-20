@@ -17,20 +17,32 @@ body{
 .popup {
   display: none;
   position: fixed;
-  top: 20%;
+  top: 30%;
   left: 10%;
   transform: translate(0, -50%);
   width: 300px;
   padding: 20px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 3;
+  font-family: "Noto Sans KR", sans-serif;
 }
-.popup-content p {
+.popup h2{
+  padding: 10px;
+  border-bottom: 2px solid rgba(0,0,0,.5);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.popup_content p {
   margin-bottom: 20px;
 }
 
-.popup-content button {
+.popup_btn{
+  display: flex;
+  justify-content: center;
+}
+
+.popup_content button {
   margin: 5px;
   padding: 10px;
   border: none;
@@ -39,9 +51,10 @@ body{
   cursor: pointer;
 }
 
-.popup-content button:hover {
+.popup_content button:hover {
   background-color: #ff7d9e;
 }
+
 
 /* header */
 header{
