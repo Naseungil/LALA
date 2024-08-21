@@ -77,7 +77,7 @@ body{
 
 /* header */
 header{
-  background: url(/images/header_bg.jpg) no-repeat;
+  background: url(images/header_bg.jpg) no-repeat;
   background-size: cover;
   height: 350px;
 }
