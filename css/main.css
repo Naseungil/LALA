@@ -29,6 +29,8 @@ body{
   font-family: "Noto Sans KR", sans-serif;
 }
 .popup h2{
+  width: 280px;
+  display: flex;
   padding: 10px;
   border-bottom: 2px solid rgba(0,0,0,.5);
   margin-bottom: 10px;
@@ -36,6 +38,15 @@ body{
 }
 .popup_content p {
   margin-bottom: 20px;
+}
+.popup_content p .domain{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 5px;
+}
+.popup_content p .domain:hover{
+  text-decoration: underline;
 }
 
 .popup_btn{
@@ -407,3 +418,5 @@ footer{
   text-decoration: underline;
   color:rgba(0, 0, 0,1);
 }
+
+/* 애니메이션 */
