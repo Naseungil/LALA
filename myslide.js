@@ -99,3 +99,4 @@ function setCookie(name, value, days) {
   var expires = "expires=" + date.toUTCString();
   document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
+alert('본 사이트는 구직용 포트폴리오 입니다.');
