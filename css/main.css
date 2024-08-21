@@ -427,6 +427,9 @@ footer{
   transform:perspective(1000px);
 
 }
+#maru:hover{
+  animation-direction: reverse;
+}
 @keyframes maru1{
   0%{    
 
